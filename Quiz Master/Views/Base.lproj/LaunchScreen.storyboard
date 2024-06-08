@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LanchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="voy-Z3-dmV">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="EMv-Bv-uGc">
+                                <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EMv-Bv-uGc" secondAttribute="height" multiplier="1:1" id="fVL-SN-KZo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Master" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpe-8W-ObH">
+                                <rect key="frame" x="115.66666666666669" y="284.66666666666669" width="162" height="35"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="30"/>
+                                <color key="textColor" name="BGColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EMv-Bv-uGc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4mx-3h-QUv"/>
+                            <constraint firstItem="tpe-8W-ObH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DsX-6e-Ddx"/>
+                            <constraint firstItem="voy-Z3-dmV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="STw-pq-741"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMv-Bv-uGc" secondAttribute="trailing" id="Svv-WB-bRw"/>
+                            <constraint firstItem="EMv-Bv-uGc" firstAttribute="top" secondItem="tpe-8W-ObH" secondAttribute="bottom" constant="-90" id="VlZ-yO-hdE"/>
+                            <constraint firstItem="voy-Z3-dmV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bhh-gh-PrU"/>
+                            <constraint firstItem="voy-Z3-dmV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bhu-Z8-01m"/>
+                            <constraint firstAttribute="bottom" secondItem="voy-Z3-dmV" secondAttribute="bottom" id="kt6-0f-Xfa"/>
+                            <constraint firstItem="EMv-Bv-uGc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mSM-Xc-8Fe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LanchScreen" width="375" height="812"/>
+        <image name="Logo" width="166.66667175292969" height="166.66667175292969"/>
+        <namedColor name="BGColor">
+            <color red="0.1803921568627451" green="0.24313725490196078" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SelectTVC" customModule="Quiz_Master" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yG6-Iv-Zjg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                        <color key="tintColor" name="White1Color"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <color key="titleColor" name="wrongText"/>
+                        </state>
+                        <connections>
+                            <action selector="selectBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="E4n-rU-5VP"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unselected" translatesAutoresizingMaskIntoConstraints="NO" id="rbY-Me-w9E">
+                        <rect key="frame" x="0.0" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="4OS-gi-YZF"/>
+                            <constraint firstAttribute="height" constant="20" id="gAb-Hy-4ps"/>
+                            <constraint firstAttribute="width" secondItem="rbY-Me-w9E" secondAttribute="height" multiplier="1:1" id="vxK-mx-rKe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chd-bO-0kD">
+                        <rect key="frame" x="36" y="12.666666666666666" width="39.333333333333343" height="18.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                        <color key="textColor" name="White1Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yG6-Iv-Zjg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EEr-mM-It5"/>
+                    <constraint firstAttribute="bottom" secondItem="yG6-Iv-Zjg" secondAttribute="bottom" constant="10" id="Y6a-6T-jdV"/>
+                    <constraint firstItem="chd-bO-0kD" firstAttribute="centerY" secondItem="rbY-Me-w9E" secondAttribute="centerY" id="Zrw-Tw-bJs"/>
+                    <constraint firstAttribute="trailing" secondItem="yG6-Iv-Zjg" secondAttribute="trailing" id="c5k-Am-gBh"/>
+                    <constraint firstItem="chd-bO-0kD" firstAttribute="leading" secondItem="rbY-Me-w9E" secondAttribute="trailing" constant="16" id="hRd-kx-fZf"/>
+                    <constraint firstItem="rbY-Me-w9E" firstAttribute="leading" secondItem="yG6-Iv-Zjg" secondAttribute="leading" id="s1e-q1-Tmi"/>
+                    <constraint firstItem="yG6-Iv-Zjg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="u5K-JU-m9v"/>
+                    <constraint firstItem="rbY-Me-w9E" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xpt-DQ-CKY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="TitleLBL" destination="chd-bO-0kD" id="a9j-02-xrN"/>
+                <outlet property="imageview" destination="rbY-Me-w9E" id="mfJ-tE-YhW"/>
+                <outlet property="selectBtn" destination="yG6-Iv-Zjg" id="wi2-AU-dRN"/>
+            </connections>
+            <point key="canvasLocation" x="54.961832061068698" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Unselected" width="19" height="18"/>
+        <namedColor name="White1Color">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="wrongText">
+            <color red="0.73333333333333328" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
